@@ -388,18 +388,6 @@
   </div>
 
 
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title">
-      <i class="fa fa-fw fa-link"></i>
-      推荐阅读
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://www.zhihu.com/question/348823655/answer/843432244" title="https://www.zhihu.com/question/348823655/answer/843432244" rel="noopener" target="_blank">公务员书籍推荐</a>
-        </li>
-      
-    </ul>
-  </div>
 
       </div>
 
@@ -422,12 +410,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">0k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">1 分钟</span>
 </div>
 
         
@@ -488,6 +476,33 @@
   
 
   
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'djNDuy9mGgcPci1cihTvniEM-gzGzoHsz',
+    appKey: 'v4BQqx7qkMJlDLK3JdEe1DRc',
+    placeholder: '这是一块评论板',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
